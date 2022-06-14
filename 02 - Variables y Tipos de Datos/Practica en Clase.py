@@ -4,7 +4,7 @@ print(mi_variable)
 mi_variable2 = 'dario'
 print(mi_variable2)
 
-mi_complejo = 5 + 7j
+mi_complejo = 4 + 7j
 print(mi_complejo)
 
 
