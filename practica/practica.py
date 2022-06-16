@@ -35,15 +35,23 @@ while n<=20:
         lista.insert(n-1,n)
     n+=1
 print(lista)  
-"""
+
 lista=[0,1]
-c=2
-while c<=30:
-    for i in lista:
-        lista.append(i+(i+1))
+c=1
+while c<=28:
+    lista.append(lista[c-1]+lista[c])
     c+=1
 print(lista)
-    
+
+for i in range(29,24,-1):
+    print(lista[i]/lista[i-1])
+"""
+cadena = 'Hola Mundo. Esto es una practica del lenguaje de programación Python'
+
+for i,c in enumerate(cadena):
+    if c =='n':
+        print(i)
+
 
 
 
