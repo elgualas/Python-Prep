@@ -56,14 +56,43 @@ dicc={'A':'1','B':'2','C':'3','D':'4','E':'5'}
 
 for i in dicc:
     print(i)
-"""
+
 cadena = 'Hola Mundo. Esto es una practica del lenguaje de programación Python'
-lista_cadena= cadena.split(sep=" ")
+lista_cadena= list(cadena)
 for i in lista_cadena:
     print(i)
 
+a=[1,2,3]
+b=["peru","australia","no hay mundial"]
+c=tuple(zip(a,b))
+print(c)
 
+lis = [18,21,29,32,35,42,56,60,63,71,84,90,91,100]
+lis2= [i for i in lis if i%7!=0]
+print(lis2)
 
+contador=0
+lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
+for i in lis:
+    if type(i)==list:
+        contador+=len(i)
+    else:
+        contador+=1
+print(contador)
+
+lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
+for i in lis:
+    if type(i)!=list:
+        d=lis.index(i)
+        lis=lis[:d]+[[i]]+lis[d+1:]
+print(lis)
+"""
+lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
+
+for indice,elemento in enumerate(lis):
+    if type(elemento)!=list:
+        lis[indice]=[elemento]
+print(lis)
 
 
 
