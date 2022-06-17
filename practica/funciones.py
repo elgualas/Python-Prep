@@ -1,3 +1,6 @@
+from pip import main
+
+
 def pri(a):
     cont=0
     for i in range(1,a+1):
@@ -15,9 +18,11 @@ def lis_pri(a):
     return se
 def lis_frec(a):
     cont=0
-    for i in range(1,max(a)+1):
-        result=[a.count(i)]
-    return result
+    b=[]
+    for i in a:
+        if a.count(i)>1:
+            main
+
         
 
 
