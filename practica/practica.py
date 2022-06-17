@@ -45,12 +45,26 @@ print(lista)
 
 for i in range(29,24,-1):
     print(lista[i]/lista[i-1])
-"""
+
 cadena = 'Hola Mundo. Esto es una practica del lenguaje de programación Python'
 
 for i,c in enumerate(cadena):
     if c =='n':
         print(i)
+
+dicc={'A':'1','B':'2','C':'3','D':'4','E':'5'}
+
+for i in dicc:
+    print(i)
+"""
+cadena = 'Hola Mundo. Esto es una practica del lenguaje de programación Python'
+lista_cadena= cadena.split(sep=" ")
+for i in lista_cadena:
+    print(i)
+
+
+
+
 
 
 
