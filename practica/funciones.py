@@ -1,5 +1,3 @@
-from pip import main
-
 
 def pri(a):
     cont=0
@@ -16,9 +14,13 @@ def lis_pri(a):
         if pri(i)==True:
             se.append(i)
     return se
-def lis_frec(a):
+def lis_frec(a,menor):
     list_un=[]
     list_mod=[]
+    if (menor):
+        a.sort()
+    else:
+        a.sort(reverse=True)
     if len(a)==0:
         return None
     for elementos in a:
@@ -32,10 +34,34 @@ def lis_frec(a):
     rep=list_mod[0]
     print(list_un)
     print(list_mod)
+    
     for i,elementos in enumerate(list_un):
         if list_mod[i]>rep:
             moda=list_un[i]
             rep=list_mod[i]
+
     return moda, rep
 
-print(lis_frec([5,3,2,6,2,3,3,3,3,8,2,2,9,7]))
+def temp(t,o,c):
+    if o=="k":
+        if c=="f":
+            res=(t-273.15)(9/5)+32
+        elif c=="c":
+            res=t-273,15
+    elif o=="f":
+        if c=="k":
+            res=(t-32)(5/9)+273.15
+        elif c=="c":
+            res=(t-32)(5/9)
+    elif o=="c":
+        if c=="f":
+            res=t*(9/5)+32
+        elif c=="k":
+            res=t+273.15
+    return res
+
+def fac(a):
+    while True:
+        if a==0:
+            return ""
+
