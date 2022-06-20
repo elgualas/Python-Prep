@@ -61,7 +61,14 @@ def temp(t,o,c):
     return res
 
 def fac(a):
+    x=1
     while True:
-        if a==0:
-            return ""
-
+        if a<=1:
+            print("Ingresa un numero que no sea 1,0 o negativo")
+            break
+        else:
+            for i in range(1,a+1):
+                x*=i
+            break
+    return x
+print(fac(0))
