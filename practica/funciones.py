@@ -67,7 +67,7 @@ def fac(a):
             print("Ingresa un numero que no sea 1,0 o negativo")
             break
         else:
-            for i in range(1,a+1):
+            for i in range(1,a+2):
                 x*=i
             break
     return x
